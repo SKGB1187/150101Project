@@ -1,22 +1,36 @@
+<!--The following are parts of a basic boilerplate for HTML-->
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <!--This sets the text seen in the tab-->
   <title>Fruit Autocomplete</title>
+  <!--This links to the Normalize.css library for consistent styling across browsers-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
-
+  <!--This links the HTML to the CSS file-->
+  <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-<!-- partial:index.partial.html -->
-<div class="search-container">
-	<input type="text" name="fruit" id="fruit" placeholder="Search fruit 🍎">
-	<div class="suggestions">
-		<ul></ul>
-	</div>
-</div>
-<!-- partial -->
-  <script  src="./script.js"></script>
 
+<body>
+  <!--Header-->
+  <div>
+    <h1>Fruit Search</h1>
+    <!--This creates hidden instructions that appear on hover-->
+    <div class="hide">Enter a fruit name in the search bar, and see how an autofill search bar works.</div>
+  </div>
+  <!--This is the main container holding the search and suggestions output-->
+  <div class="search-container">
+    <input type="text" name="fruit" id="fruit" placeholder="Search fruit 🍎">
+    <!--This div is to provide a location for the suggestions to appear-->
+    <div class="suggestions">
+      <ul></ul>
+    </div>
+    <!--This button allows you to clear the search-->
+    <button id="clearButton">Clear Fruit Search</button>
+  </div>
+  <!--This connects the HTML to the JavaScript file-->
+  <script src="./script.js"></script>
 </body>
+
 </html>
