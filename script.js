@@ -40,7 +40,7 @@ function search(inputVal, fruit) {
 		/*otherwise do nothing*/
 	});
 	/*once the results array is populated truncate it down to 10 values*/
-	return results.slice(0,11);
+	return results;
 }
 
 /*searchHandler function - takes the input value and the output from the search function
@@ -49,7 +49,7 @@ function searchHandler(e) {
 	/*takes the user input value*/
 	const inputVal = input.value;
 	/*takes the ouput from the search function*/
-	const searchResults = search(inputVal, fruit).slice(0,11);
+	const searchResults = search(inputVal, fruit);
 	/*if the input does not match anything in the fruit array run the noMatch function */
 	if(searchResults.length === 0){
 		noMatch();
@@ -80,7 +80,6 @@ function useSuggestion(e) {
 	/*if the suggestion is clicked*/
 	if (e.target.tagName === "LI"){
 		if(e.target.textContent === "No Match Found"){
-
 		} else {
 		/*set the input value to the suggestion text*/
 		input.value = e.target.textContent;
