@@ -58,6 +58,11 @@ button{
   top: 45%;
 }
 
+.suggestions{
+  height:15.75em;
+  overflow-y: scroll;
+}
+
 ul {
   list-style-type: none;
   background-color:hsl(325, 92%, 86%);
