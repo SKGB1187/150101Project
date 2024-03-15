@@ -29,14 +29,14 @@ function search(inputVal, fruit) {
 			results.push(val);
 		}
 	});
-	return results.slice(0,11);
+	return results;
 }
 
 /*searchHandler function - takes the input value and the output from the search function
 then returns the suggestions from the showSuggestions function */
 function searchHandler(e) {
 	const inputVal = input.value;
-	const searchResults = search(inputVal, fruit).slice(0,11);
+	const searchResults = search(inputVal, fruit);
 
 	if(searchResults.length === 0){
 		noMatch();
