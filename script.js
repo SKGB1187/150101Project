@@ -63,7 +63,6 @@ function showSuggestions(results) {
 function useSuggestion(e) {
 	if (e.target.tagName === "LI"){
 		if(e.target.textContent === "No Match Found"){
-
 		} else {
 		input.value = e.target.textContent;
 		}
